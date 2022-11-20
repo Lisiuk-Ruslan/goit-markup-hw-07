@@ -780,6 +780,10 @@ footer {
   color: var(--h1-text-color);
 }
 
+.address-nav {
+  width: 231px;
+}
+
 .address-nav .link {
   font-family: 'Roboto';
   font-size: 14px;
@@ -882,6 +886,7 @@ footer {
 .box-form {
   display: block;
   margin-left: 93px;
+  width: 570px;
 }
 
 .footer-form-name {
