@@ -8,17 +8,23 @@
 
 // index
 // components 
-@import './components/header';
-@import './components/baner';
-@import './components/modal';
-@import './components/options';
-@import './components/work';
-@import './components/command';
-@import './components/client';
-@import './components/footer';
 
+@import './components/modal';
+@import './components/button';
+@import './components/social';
+
+
+// index
+// layouts
+@import './layouts/header';
+@import './layouts/baner';
+@import './layouts/options';
+@import './layouts/work';
+@import './layouts/command';
+@import './layouts/client';
+@import './layouts/footer';
 
 // portfolio 
 // components
 @import './components/portfolio-btn';
-@import './components/portfolio-work';
+@import './layouts/portfolio-work';
