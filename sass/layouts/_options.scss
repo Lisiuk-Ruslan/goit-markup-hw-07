@@ -10,10 +10,10 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}
 
-.section-list .item+.item {
-    margin-left: 30px;
+    .item+.item {
+        margin-left: 30px;
+    }
 }
 
 .icon {
@@ -34,22 +34,22 @@
     height: 70px;
 }
 
-.section-title,
-.title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+.section-title {
+    .title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
 
-    color: var(--title-text-color);
-}
+        color: var(--title-text-color);
+    }
 
-.section-title,
-.options {
-    margin-top: 0;
-    margin-bottom: 0;
+    .options {
+        margin-top: 0;
+        margin-bottom: 0;
 
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
 }

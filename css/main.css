@@ -528,12 +528,11 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link current {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav:hover, .site-nav:focus {
   color: var(--accent-color);
 }
 
@@ -581,8 +580,7 @@ header {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-link:hover, .contact-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -667,8 +665,7 @@ header {
   height: 70px;
 }
 
-.section-title,
-.title {
+.section-title .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -676,8 +673,7 @@ header {
   color: var(--title-text-color);
 }
 
-.section-title,
-.options {
+.section-title .options {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
@@ -1046,6 +1042,11 @@ footer {
   margin-bottom: 30px;
 }
 
+.portfolio-item-box {
+  position: relative;
+  overflow: hidden;
+}
+
 .portfolio-item {
   display: block;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1054,16 +1055,17 @@ footer {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item-box {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-item:hover .portfolio-ofrlay,
+.portfolio-item:hover,
 .portfolio-item:focus .portfolio-ofrlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+.portfolio-item:hover, .portfolio-item:focus {
+  opacity: 1;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-ofrlay {
@@ -1103,13 +1105,6 @@ footer {
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: var(--h1-text-color);
-}
-
-.portfolio-item:hover,
-.portfolio-item:focus {
-  opacity: 1;
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .section-portfolio {

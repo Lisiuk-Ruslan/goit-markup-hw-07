@@ -19,10 +19,10 @@
 
 .work-list {
     display: flex;
-}
 
-.work-list .item+.item {
-    margin-left: 30px;
+    .item+.item {
+        margin-left: 30px;
+    }
 }
 
 .item-img {
