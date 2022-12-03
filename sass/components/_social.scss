@@ -1,5 +1,5 @@
 // social-command
-.social-icons {
+.social__icons {
     display: flex;
     justify-content: space-between;
     padding-left: 32px;
@@ -7,7 +7,7 @@
     padding-bottom: 30px;
 }
 
-.social-link {
+.social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,16 +27,16 @@
     }
 }
 
-.icon-social {
+.social__svg {
     fill: currentColor;
 }
 
 // social-footer
-.box-social {
+.footer__box__social {
     margin-left: 70px;
 }
 
-.social-footer {
+.footer__box__name {
     margin-top: 0;
     margin-bottom: 20px;
 
@@ -48,7 +48,7 @@
     color: var(--primary-fon-color);
 }
 
-.footer-social-icons {
+.footer__social__icons {
     display: flex;
     justify-content: space-between;
 
@@ -57,7 +57,7 @@
     }
 }
 
-.footer-social-link {
+.footer__social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +76,6 @@
     }
 }
 
-.footer-icon-social {
+.footer__icon__social {
     fill: currentColor;
 }

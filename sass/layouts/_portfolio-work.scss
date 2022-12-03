@@ -2,12 +2,12 @@
     cursor: pointer;
 }
 
-.flex-container {
+.flex__container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.portfolio-element {
+.portfolio__element {
     &:not(:nth-child(3n)) {
         margin-right: 30px;
     }
@@ -18,17 +18,12 @@
 
 }
 
-.portfolio-item-box {
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio-item {
+.portfolio__item {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus .portfolio-ofrlay {
+    &:hover .portfolio__overlay,
+    &:focus .portfolio__overlay {
         transform: translateY(0);
         opacity: 1;
     }
@@ -41,7 +36,7 @@
     }
 }
 
-.portfolio-ofrlay {
+.portfolio__overlay {
     position: absolute;
 
     top: 0;
@@ -54,7 +49,13 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item-link {
+.portfolio__item__box {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.portfolio__item__link {
     display: flex;
     position: absolute;
 
@@ -80,7 +81,7 @@
 }
 
 
-.section-portfolio {
+.section__portfolio {
     padding: 20px 15px;
 
     border-left: 1px solid #eeeeee;
@@ -88,7 +89,7 @@
     border-right: 1px solid #eeeeee;
 }
 
-.portfolio-title {
+.portfolio__title {
     margin-top: 0;
     margin-bottom: 4px;
 
@@ -100,7 +101,7 @@
     color: var(--nav-primary-text-color);
 }
 
-.portfolio-name {
+.portfolio__name {
     margin-top: 0;
     margin-bottom: 0;
 

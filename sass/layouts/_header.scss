@@ -8,12 +8,12 @@ header {
     align-items: center;
 }
 
-.main-naf {
+.main__nav {
     display: flex;
     align-items: center;
 }
 
-.logo {
+.main__logo {
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -23,44 +23,46 @@ header {
     color: var(--logo-primary-text-color);
 }
 
-.stydio {
+.main__stydio {
     color: var(--title-text-color);
 }
 
-.site-nav {
+.main__site {
     display: flex;
     margin-left: 93px;
 
-    .item+.item {
+    .main__item+.main__item {
         margin-left: 50px;
     }
+}
 
-    .link {
-        display: block;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        padding-top: 32px;
-        padding-bottom: 32px;
+.main__link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-        color: #212121;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        current {
-            color: var(--accent-color);
-        }
+    .current {
+        color: var(--accent-color);
     }
+}
+
+.main__link {
 
     &:hover,
     &:focus {
         color: var(--accent-color);
     }
-
-
 }
 
-.link.current {
+
+.main__link.current {
     position: relative;
 }
 
@@ -78,37 +80,39 @@ header {
     border-radius: 2px;
 }
 
-.contacts-nav {
+.main__contacts {
     display: flex;
     margin-left: auto;
-
-    .item+.item {
-        margin-left: 50px;
-    }
-
-    a {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-
-        color: var(--primary-text-color);
-
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 }
 
-.icon-header {
-    margin-right: 10px;
-    fill: currentColor;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.main__contacts__item+.main__contacts__item {
+    margin-left: 50px;
 }
 
-.contact-link {
+a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main__contact__link {
+    margin-right: 30px;
 
     &:hover,
     &:focus {
         color: var(--accent-color);
         fill: var(--accent-color);
     }
+}
+
+.main__contacts__svg {
+    margin-right: 10px;
+
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

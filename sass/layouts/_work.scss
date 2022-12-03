@@ -4,7 +4,7 @@
     padding-bottom: 94px;
 }
 
-.work-title {
+.work__title {
     margin-top: 0;
     margin-bottom: 50px;
 
@@ -17,21 +17,21 @@
     color: var(--nav-primary-text-color);
 }
 
-.work-list {
+.work__list {
     display: flex;
 
-    .item+.item {
+    .work__item+.work__item {
         margin-left: 30px;
     }
 }
 
-.item-img {
+.work__img {
     position: relative;
     justify-content: space-between;
     z-index: 1;
 }
 
-.item-name {
+.work__name {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 25px;

@@ -5,12 +5,12 @@ footer {
     padding-bottom: 60px;
 }
 
-.box-footer {
+.box__footer {
     display: flex;
     align-items: baseline;
 }
 
-.logo-footer {
+.footer__logo {
     display: block;
     margin-bottom: 20px;
 
@@ -23,14 +23,14 @@ footer {
     color: var(--logo-primary-text-color);
 }
 
-.stydio-footer {
+.footer__stydio {
     color: var(--h1-text-color);
 }
 
-.address-nav {
+.footer__address__nav {
     width: 231px;
 
-    .link {
+    .footer__address__link {
         font-family: 'Roboto';
         font-size: 14px;
         line-height: 1.71;
@@ -48,22 +48,17 @@ footer {
     }
 }
 
-.addres-https {
+.footer__addres__https {
     margin-top: 0;
     margin-bottom: 9px;
 }
 
-.mail {
+.footer__address__mail {
     margin-top: 0;
     margin-bottom: 9px;
 }
 
-.tel {
-    margin-top: 0;
-    margin-bottom: 0px;
-}
-
-.nav-link {
+.footer__address__link {
     font-family: 'Roboto';
     font-size: 14px;
     line-height: 1.71;
@@ -80,20 +75,40 @@ footer {
     }
 }
 
+.footer__address__tel {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+
+
 
 /* Форма в футері */
 
-.box-form {
+.footer__box__form {
     display: block;
     margin-left: 93px;
     width: 570px;
 }
 
-.footer-form-name {
+.form__item {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.form__name {
     display: flex;
 }
 
-.footer-form-label {
+.form__label {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 16px;
@@ -127,17 +142,4 @@ footer {
 
         color: rgba(255, 255, 255, 0.6);
     }
-}
-
-.form-item {
-    margin-top: 0;
-    margin-bottom: 20px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #ffffff;
 }

@@ -13,31 +13,31 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    .hero__title {
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 696px;
+        height: 120px;
+        left: 452px;
+        top: 280px;
+
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+
+        letter-spacing: 0.06em;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: var(--h1-text-color);
+    }
 }
 
 .baner .container {
     text-align: center;
     padding: 200px 0;
-}
-
-.baner-title {
-    margin-top: 0;
-    margin-bottom: 30px;
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
-
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-
-    letter-spacing: 0.06em;
-    text-align: center;
-    text-transform: uppercase;
-
-    color: var(--h1-text-color);
 }
